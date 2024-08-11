@@ -1,38 +1,76 @@
-.App {
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 300;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.full-screen {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#intro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  color: black;
+}
+
+#panels #panels-container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #ddd; */
+}
+
+#panels #panels-container .panel {
+  color: black;
+  position: relative;
+  width: fit-content;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* Optional: */
+  /* border-right: 1px solid #f00;  */
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Layering from bottom anime */
+.LayeringFromBottomAnime {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  will-change: transform;
 }

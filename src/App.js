@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/home";
+import Home_animy from "./components/Home_animy";
+import LayeringFromBottomAnime from "./components/LayeringFromBottomAnime";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Discover from "./components/Discover";
+import MiddlePhotosAnime from "./components/MiddlePhotosAnime";
+import AfterPhotos from "./components/AfterPhotos";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import HomePageAnimation from "./components/homePageAnimation";
+import ImagesAnimation from "./components/ImagesAnimation";
+import FastWayComp from "./components/FastWayComp";
+import StaySafe from "./components/StaySafe";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      {/* <HomePageAnimation /> */}
+      <Home />
+      <Home_animy />
+      <Discover />
+      <MiddlePhotosAnime />
+      {/* <ImagesAnimation /> */}
+      <AfterPhotos />
+      <StaySafe />
+      {/* <LayeringFromBottomAnime /> */}
+
+      <FastWayComp />
     </div>
   );
 }

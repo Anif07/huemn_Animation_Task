@@ -1,0 +1,79 @@
+/* FastWayComp.module.css */
+.fastWayContainer {
+  margin: 100px 0;
+  padding-top: 50px;
+}
+
+.slidingShow {
+  display: flex;
+  gap: 30px;
+  overflow: auto;
+  scrollbar-width: none;
+  padding: 20px 100px;
+}
+
+.fastWayContainer h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.fastWayContainer h1 span {
+  background-color: rgba(150, 227, 150, 0.806);
+  color: rgb(8, 125, 8);
+  padding: 0 35px;
+  border-radius: 50px;
+}
+
+.slide1 {
+  width: 80vw;
+  border: 1px solid rgba(45, 43, 43, 0.854);
+  border-radius: 45px;
+}
+
+.slide1 > div {
+  display: flex;
+  padding: 50px;
+  gap: 20px;
+}
+
+.slide1 img {
+  border-radius: 30px;
+}
+
+.slide2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fde293;
+  border-radius: 45px;
+}
+
+.slide2 > div {
+  display: flex;
+  padding: 50px 60px;
+  gap: 40px;
+}
+
+.slide2 img {
+  align-self: flex-end;
+  border-radius: 30px;
+}
+
+.slide3 {
+  background-color: #188038;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+}
+
+.slide3 div:first-child {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slide3 div:nth-child(2) {
+  align-self: end;
+}

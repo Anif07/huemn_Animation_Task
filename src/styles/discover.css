@@ -1,0 +1,59 @@
+.discover {
+  margin-top: 50px;
+}
+.discover-box1 h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.discover-box2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 40px;
+}
+.discover-left {
+  background-color: #e8f0fe;
+  width: 614px;
+  height: 640px;
+  border-radius: 20px;
+}
+.discoverUpper {
+  padding: 30px 40px;
+}
+.discover-left img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.discoverUpper h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.discoverUpper p {
+  font-size: 1.2rem;
+}
+.paraBlue {
+  color: blue;
+  font-weight: 600;
+  cursor: pointer;
+}
+.discover-right {
+  width: 614px;
+  height: 640px;
+  border-radius: 20px;
+  background-color: #fef7e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.discoverUpper-Box2 {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+.discover-right img {
+  width: 150px;
+  height: auto;
+}

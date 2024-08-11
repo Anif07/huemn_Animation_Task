@@ -1,0 +1,21 @@
+.MiddlePhotosAnime {
+  margin: 100px 0;
+}
+.MiddlePhotosAnime h1 {
+  font-size: 4rem;
+}
+.spanStyle {
+  background-color: rgba(243, 86, 86, 0.502);
+  color: red;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+.photosAnimation {
+  display: flex;
+  justify-content: center;
+}
+.photosAnimation img {
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+}
