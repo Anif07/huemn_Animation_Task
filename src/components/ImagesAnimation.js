@@ -15,13 +15,13 @@ const ImagesAnimation = () => {
     const getRatio = (el) =>
       window.innerHeight / (window.innerHeight + el.offsetHeight);
 
-    const images = [image1, image2, image3]; // Array of images
+    const images = [image1, image2, image3];
 
     gsap.utils.toArray(sectionsRef.current).forEach((section, i) => {
       const bg = section.querySelector(".imagesAnimebg");
 
       if (bg && i < images.length) {
-        bg.style.backgroundImage = `url(${images[i]})`; // Apply images in order
+        bg.style.backgroundImage = `url(${images[i]})`;
 
         gsap.fromTo(
           bg,

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import styles from "../styles/layeredFromBottom.module.css"; // Ensure path is correct
+import styles from "../styles/layeredFromBottom.module.css";
 
 const LayeringFromBottomAnime = () => {
   const containerRef = useRef(null);

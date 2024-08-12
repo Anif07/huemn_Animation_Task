@@ -63,19 +63,15 @@ const HomePageAnimation = () => {
     const maxScale = 1.7;
     const minScale = 1;
 
-    // Calculate the scale proportionally based on the amount of scroll
-    let scale = 1 + ((120 - fastBoxPosition) / 120) * 0.7; // Adjust the factor 0.7 to control the scaling rate
+    let scale = 1 + ((120 - fastBoxPosition) / 120) * 0.7;
 
-    // Ensure that the scale stays within the specified range
     scale = Math.max(minScale, Math.min(maxScale, scale));
 
     const fastBoxScrollDown = 120 > fastBoxPosition;
     if (fastBoxScrollDown) {
-      // Decrease scale when scrolling down
-      scale = Math.min(maxScale, scale - 0.2); // Adjust as needed
+      scale = Math.min(maxScale, scale - 0.2);
     } else {
-      // Increase scale when scrolling up
-      scale = Math.max(minScale, scale + 0.2); // Adjust as needed
+      scale = Math.max(minScale, scale + 0.2);
     }
 
     if (fastBoxScrollDown) {
@@ -185,7 +181,6 @@ const HomePageAnimation = () => {
           >
             <img src={image4} style={{ height: "100%" }} />
           </div>
-          {/* <div className="box" style={{ transform: `translate(${translate.box_5.x}, ${translate.box_5.y}) scale(${translate.box_3.scale})`, opacity: translate.box_3.opacity }}>5</div> */}
         </div>
       </div>
     </>

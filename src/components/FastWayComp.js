@@ -24,7 +24,6 @@ const FastWayComp = () => {
               </p>
             </div>
           </div>
-          {/* <img src={slide1img} alt="img1" /> */}
           <video width="950" height="400" autoPlay loop muted>
             <source src={video} type="video/mp4" />
           </video>
