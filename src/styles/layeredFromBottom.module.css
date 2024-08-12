@@ -1,5 +1,5 @@
 .container {
-  height: 300vh; /* Extend height to enable scrolling */
+  height: 300vh;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
 .description {
   position: sticky;
   top: 0;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   z-index: 10;
 }
