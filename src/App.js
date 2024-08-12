@@ -22,9 +22,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <HomePageAnimation /> */}
-      <Home />
-      <Home_animy />
+      <HomePageAnimation />
       <Discover />
       <MiddlePhotosAnime />
       {/* <ImagesAnimation /> */}
@@ -32,7 +30,6 @@ function App() {
       <AfterPhotos />
       <StaySafe />
       {/* <LayeringFromBottomAnime /> */}
-
       <FastWayComp />
     </div>
   );

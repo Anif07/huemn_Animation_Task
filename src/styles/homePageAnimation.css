@@ -1,9 +1,4 @@
-/* .title {
-  text-align: center;
-  font-size: 30px;
-}
-
-.parent {
+.parenthomepageanimation {
   height: 650px;
   overflow-x: hidden;
   display: flex;
@@ -11,7 +6,7 @@
   justify-content: center;
 }
 
-.container {
+.homeanimecontainer {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -19,7 +14,7 @@
   transform: translate(-13%, 0);
 }
 
-.box {
+.homeanimebox {
   width: max-content;
   height: 300px;
   background-color: white;
@@ -31,22 +26,7 @@
   transition: all 0.3s linear;
   border: 1px solid #ddd;
 }
-
-.box1 {
-  width: 50vw;
-  height: 400px;
-  background-color: white;
-  border-radius: 20px;
-  transition: all 0.3s linear;
-  border: 1px solid #ddd;
-  flex-shrink: 0;
-  background-color: rgba(245, 100, 243, 0.317);
+.homeanimebox4 {
+  box-shadow: 0.5px 0.5px 5px black, -0.5px -0.5px 5px black;
+  padding: 10px;
 }
-
-button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgb(237, 236, 236);
-  border: none;
-} */

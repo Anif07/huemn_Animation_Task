@@ -5,6 +5,7 @@ import image3 from "../images/chrome-gallery-3-2x.webp";
 import image4 from "../images/chrome-gallery-4-2x.webp";
 import image5 from "../images/chrome-gallery-5-2x.webp";
 import "../styles/homePageAnimation.css";
+import Home from "./home";
 
 const HomePageAnimation = () => {
   const prevScrollTop = useRef(0);
@@ -16,27 +17,27 @@ const HomePageAnimation = () => {
 
   const [translate, setTranslate] = useState({
     box_1: {
-      x: "70%",
-      y: "0%",
-      scale: 1,
+      x: "40%",
+      y: "-40%",
+      scale: 1.5,
       opacity: 1,
     },
     box_2: {
-      x: "-70%",
+      x: "-120%",
       y: "3%",
-      scale: 2,
-      opacity: 1,
+      scale: 1,
+      opacity: 0,
     },
     box_3: {
-      x: 0,
-      y: 0,
-      scale: 1.2,
+      x: "55%",
+      y: "-13%",
+      scale: 1.4,
       opacity: 1,
     },
     box_4: {
-      x: "70%",
-      y: "3%",
-      scale: 2,
+      x: "305%",
+      y: "-10%",
+      scale: 1.8,
       opacity: 1,
     },
     box_5: {
@@ -84,20 +85,24 @@ const HomePageAnimation = () => {
 
     const transformations = {
       box_1: {
-        scrollDown: { x: "338%", y: "0%", scale: 1, opacity: 1 },
-        scrollUp: { x: "-70%", y: "0%", scale: 1, opacity: 0 },
+        scrollDown: { x: "-15%", y: "0%", scale: 1.4, opacity: 1 },
+        scrollUp: { x: "40%", y: "-40%", scale: 1.5, opacity: 1 },
       },
       box_2: {
-        scrollDown: { x: "-36%", y: "0%", scale: 1 },
-        scrollUp: { x: "-70%", y: "3%", scale: 2 },
+        scrollDown: { x: "18%", y: "0%", scale: 1.2 },
+        scrollUp: { x: "-120%", y: "3%", scale: 1, opacity: 0 },
       },
       box_3: {
-        scrollDown: { x: 0, y: 0, scale: 1 },
-        scrollUp: { x: 0, y: 0, scale: 1.2 },
+        scrollDown: { x: "30%", y: 0, scale: 1.4 },
+        scrollUp: { x: "55%", y: "-13%", scale: 1.4, opacity: 1 },
       },
       box_4: {
-        scrollDown: { x: "0%", y: "0%", scale: 1 },
-        scrollUp: { x: "70%", y: "3%", scale: 2 },
+        scrollDown: { x: "160%", y: "0%", scale: 1.2 },
+        scrollUp: { x: "305%", y: "-10%", scale: 1.8, opacity: 1 },
+      },
+      box_5: {
+        scrollDown: { x: "80%", y: "0%", scale: 1.4 },
+        scrollUp: { x: "100%", y: 0, scale: 1, opacity: 0 },
       },
     };
 
@@ -136,17 +141,11 @@ const HomePageAnimation = () => {
 
   return (
     <>
-      <div className="title">
-        <h1>
-          <span>The browser</span>
-          <br />
-          <span>built to be yours</span>
-        </h1>
-      </div>
-      <div className="parent">
-        <div className="container">
+      <Home />
+      <div className="parenthomepageanimation">
+        <div className="homeanimecontainer">
           <div
-            className="box"
+            className="homeanimebox"
             style={{
               transform: `translate(${translate.box_1.x}, ${translate.box_1.y}) scale(${translate.box_1.scale})`,
               opacity: translate.box_1.opacity,
@@ -155,7 +154,7 @@ const HomePageAnimation = () => {
             <img src={image1} style={{ height: "100%" }} />
           </div>
           <div
-            className="box"
+            className="homeanimebox homeanimebox2"
             style={{
               transform: `translate(${translate.box_2.x}, ${translate.box_2.y}) scale(${translate.box_2.scale})`,
               opacity: translate.box_2.opacity,
@@ -164,7 +163,7 @@ const HomePageAnimation = () => {
             <img src={image2} style={{ height: "100%" }} />
           </div>
           <div
-            className="box"
+            className="homeanimebox homeanimebox3"
             style={{
               transform: `translate(${translate.box_3.x}, ${translate.box_3.y}) scale(${translate.box_3.scale})`,
               opacity: translate.box_3.opacity,
@@ -173,13 +172,22 @@ const HomePageAnimation = () => {
             <img src={image3} style={{ height: "100%" }} />
           </div>
           <div
-            className="box"
+            className="homeanimebox homeanimebox4"
             style={{
               transform: `translate(${translate.box_4.x}, ${translate.box_4.y}) scale(${translate.box_4.scale})`,
               opacity: translate.box_4.opacity,
             }}
           >
             <img src={image4} style={{ height: "100%" }} />
+          </div>
+          <div
+            className="homeanimebox"
+            style={{
+              transform: `translate(${translate.box_5.x}, ${translate.box_5.y}) scale(${translate.box_5.scale})`,
+              opacity: translate.box_5.opacity,
+            }}
+          >
+            <img src={image5} style={{ height: "100%" }} />
           </div>
         </div>
       </div>
