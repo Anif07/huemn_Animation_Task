@@ -14,6 +14,7 @@ import HomePageAnimation from "./components/homePageAnimation";
 import ImagesAnimation from "./components/ImagesAnimation";
 import FastWayComp from "./components/FastWayComp";
 import StaySafe from "./components/StaySafe";
+import Accordian from "./components/Accordian";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +28,7 @@ function App() {
       <Discover />
       <MiddlePhotosAnime />
       {/* <ImagesAnimation /> */}
+      <Accordian />
       <AfterPhotos />
       <StaySafe />
       {/* <LayeringFromBottomAnime /> */}
